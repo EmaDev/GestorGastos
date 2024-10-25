@@ -1,9 +1,9 @@
 {
-  "name": "spa-usuarios",
+  "name": "gestor-gastos",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://emadev.github.io/spa_usuarios/",
+  "homepage": "https://emadev.github.io/GestorGastos/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
