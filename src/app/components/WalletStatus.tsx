@@ -1,6 +1,6 @@
 import { Button } from "@nextui-org/button";
 import { useContext } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 import { GoArrowDownRight, GoArrowUpRight } from "react-icons/go";
 import { walletContext } from "../../context/WalletContext";
 import { Wallet } from '../../interfaces/Wallet';

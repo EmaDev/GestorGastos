@@ -2,19 +2,21 @@ import { useContext, useEffect, useState } from 'react';
 import { Header } from '../components/Header'
 import { WalletStatus } from '../components/WalletStatus';
 import { ListTransations } from '../components/ListTransations';
-import { useAuthStore } from '../../store/authStore';
-import { addTransaccionToWallet, createNewWallet, getAllWallets, getWallet } from '../../api/firebase/transactions';
+//import { useAuthStore } from '../../store/authStore';
 import { WalletsList } from '../components/WalletsList';
-import { Transaction } from '../../interfaces/Transacion';
 import { walletContext } from '../../context/WalletContext';
 import { Spinner } from '@nextui-org/react';
 
 export const Home = () => {
 
-  const user = useAuthStore((store) => store.user);
-  const [isLaoding, setIsLoading] = useState<boolean>(false);
+  //const user = useAuthStore((store) => store.user);
+  const [isLaoding, setIsLoading] = useState<boolean>(true);
   const { activeWallet } = useContext(walletContext)
 
+
+  useEffect( () => {
+    setIsLoading(false)
+  },[])
 
   if (isLaoding) {
     return (

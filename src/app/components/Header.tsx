@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import { Separator } from '../../ui/components/Separator';
 import { MdKeyboardArrowRight } from "react-icons/md";

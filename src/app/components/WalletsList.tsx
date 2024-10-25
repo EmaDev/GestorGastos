@@ -7,10 +7,6 @@ import { Separator } from '../../ui/components/Separator';
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { NewWalletModal } from './NewWalletModal';
 
-interface Props {
-  isVisible: boolean;
-  list: Wallet[];
-}
 
 export const WalletsList = () => {
 
