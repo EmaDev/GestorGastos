@@ -7,6 +7,7 @@ import { BaseLayout } from '../components/BaseLayout'
 import { Transaction } from '../pages/Transaction'
 import { WalletContextProvider } from '../../context/WalletContext'
 
+
 export const AppRoutes = () => {
     return (
         <WalletContextProvider>
